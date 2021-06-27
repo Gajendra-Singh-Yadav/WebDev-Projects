@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Windows 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="icons">
+        <a href="https://www.google.com" target="-blank">
+            <img src="chromeicon.png" width="74px" alt=""></a>
+        <div>Chrome</div>
+    </div>
+    <div class="taskbar">
+        <img src="icons.PNG" alt="">
+        <img class="right" src="taskbarright.PNG" alt="">
+    </div>
+    <div class="startmenu">
+        <img src="startmenu.PNG" alt="">
+    </div>
+
+
+
+    <script>
+        let taskbar = document.getElementsByClassName("taskbar")[0]
+        let startmenu = document.getElementsByClassName("startmenu")[0]
+
+        taskbar.addEventListener("click", () => {
+            console.log("clicked");
+            if (startmenu.style.bottom == "50px") {
+                startmenu.style.bottom = "-655px"
+            }
+            else {
+                startmenu.style.bottom = "50px"
+            }
+        })
+
+    </script>
+</body>
+
+</html>
